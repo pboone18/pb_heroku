@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
   before_action :load_movie, only: [:update, :edit, :show]
+  skip_before_action :authenticate_user!, only: :index
 
   def index
     @movies = Movie.search_for(params[:q])
