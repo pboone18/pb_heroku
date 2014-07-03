@@ -1,4 +1,7 @@
 <h1><%= @movie.title %></h1>
+<%= image_tag @rotten_poster %>
+<h3>Rotten Tomatoes Score: <%= @rotten_score %>
 <p><%= @movie.description %></p>
 
 <%= link_to "Edit", edit_movie_path(@movie) %>
+

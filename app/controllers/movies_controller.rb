@@ -32,6 +32,9 @@ class MoviesController < ApplicationController
   end
 
   def show
+    movie = RottenMovie.find(title: @movie.title, limit: 1)
+    @rotten_score = movie.ratings.critics_score
+    @rotten_poster = movie.posters.original
   end
 
   private
