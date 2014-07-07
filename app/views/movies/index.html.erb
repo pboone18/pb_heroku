@@ -2,6 +2,8 @@
 
 <% if user_signed_in? %>
   <h3><%= link_to "+ Add New Movie", new_movie_path %></h3>
+<% else %>
+  <h3><%= link_to "Sign in", new_user_session_path %></h3>
 <% end %>
 
 <%= form_tag "/", method: "GET" do %>
