@@ -7,6 +7,7 @@ gem 'devise'
 gem 'pry-rails'
 gem 'rottentomatoes'
 gem 'dotenv-rails'
+gem 'unicorn'
 
 gem 'sqlite3', group: :development
 
